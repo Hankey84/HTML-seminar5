@@ -175,6 +175,14 @@ summary {
   width: 100%;
 }
 
+.product:hover .product__img {
+  filter: brightness(0.5);
+}
+
+.product:hover .product__add {
+  display: flex;
+}
+
 .product__add {
   position: absolute;
   top: 188px;
@@ -191,6 +199,14 @@ summary {
   justify-content: center;
   gap: 11px;
   color: #FFFFFF;
+}
+
+product__add:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.product__add:hover svg path {
+  fill: #F16D7F;
 }
 
 .product__content {
@@ -227,12 +243,112 @@ summary {
   color: #F16D7F;
 }
 
-.footer {
+.browse__button {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   justify-content: center;
 }
 
+.button1 {
+  display: block;
+  width: 212px;
+  height: 46px;
+  border: 1px solid #F16D7F;
+  text-align: center;
+  line-height: 40px;
+  color: #F16D7F;
+  transition: all 0.3s;
+}
+
+.button1:hover {
+  background-color: #F16D7F;
+  color: white;
+}
+
+.advantages {
+  background-color: #222222;
+  padding-top: 104px;
+  padding-bottom: 104px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.advantages__item {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.advantages__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FBFBFB;
+}
+
+.advantages__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+.subscribe {
+  display: flex;
+  position: relative;
+}
+
+.background__img {
+  width: 100%;
+}
+
+.subscribe__item {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe__text {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.subscribe__heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40.13px;
+  text-align: center;
+
+}
+
+.basement {
+  padding-bottom: 79px;
+  background-color: #222222;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/* .basement__img {
+
+} */
 
 @media(max-width: 375px) {
 
@@ -293,5 +409,5 @@ summary {
   .sale__item_big>img {
     height: 111px;
   }
-  
+
 }
