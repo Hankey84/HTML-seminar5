@@ -19,6 +19,11 @@ summary {
   display: block;
 }
 
+:root {
+  --main-background-color: white;
+  --main-color: black;
+}
+
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
@@ -441,6 +446,62 @@ product__add:hover {
   align-items: center;
 }
 
+.social__icons {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.icon__1:hover path{
+  --main-background-color: #F16D7F;
+  --main-color: white;
+}
+
+@media(max-width: 768px) {
+  
+  .header__left {
+    margin-left: 40px;
+  }
+
+  .header__right {
+    margin-right: 40px;
+  }
+  .sale {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .advantages {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .product-box {
+    padding-bottom: 30px;
+  }
+
+  .browse__button {
+    margin-bottom: 70px;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    height: 614px;
+  }
+
+  .subscribe__item {
+    margin-top: 60px;
+    gap: 0.5em;
+  }
+
+  .basement {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+}
+
 @media(max-width: 375px) {
 
   .header__left {
@@ -518,6 +579,10 @@ product__add:hover {
    }
 
   .basement__img {
+    scale: 60%;
+  }
+
+  .social__icons {
     scale: 60%;
   }
 
